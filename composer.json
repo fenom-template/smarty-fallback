@@ -1,0 +1,23 @@
+{
+    "name": "fenom/smarty-fallback",
+    "description": "Smarty fallback for Fenom",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "keywords": ["fenom", "smarty", "fallback", "templater", "template"],
+    "authors": [
+        {
+            "name": "Ivan Shalganov",
+            "email": "a.cobest@gmail.com"
+        }
+    ],
+    "require": {
+        "fenom/fenom": "2.*",
+        "fenom/fs-entity-loader": "1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-0": { "Fenom\\": "src/" }
+    }
+}
