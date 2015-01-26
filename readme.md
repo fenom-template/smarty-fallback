@@ -6,23 +6,27 @@ Smarty Fallback for Fenom
 
 ## Accessors
 
-| Accessor         | Smarty2  | Smarty3 |
-|------------------|----------|---------|
-| `$smarty.get`    | yes      | yes     |
-| `$smarty.post`   | yes      | yes     |
-| `$smarty.cookie` | yes      | yes     |
-| `$smarty.request`| yes      | yes     |
-| `$smarty.server` | yes      | yes     |
-| `$smarty.env`    | yes      | yes     |
-| `$smarty.session`| yes      | yes     |
-| `$smarty.const`  | yes      | yes     |
-| `$smarty.ldelim` | no       | no     |
-| `$smarty.rdelim` | no       | no     |
-| `$smarty.block`  | -       | no     |
-| `$smarty.section`*  | no       | -     |
+| Accessor         | Smarty2  | Smarty3  |
+|------------------|----------|----------|
+| `$smarty.get`    | yes      | yes      |
+| `$smarty.post`   | yes      | yes      |
+| `$smarty.cookie` | yes      | yes      |
+| `$smarty.request`| yes      | yes      |
+| `$smarty.server` | yes      | yes      |
+| `$smarty.env`    | yes      | yes      |
+| `$smarty.session`| yes      | yes      |
+| `$smarty.const`  | yes      | yes      |
+| `$smarty.ldelim` | no       | no       |
+| `$smarty.rdelim` | no       | no       |
+| `$smarty.block`  | -       | no        |
+| `$smarty.section`*  | no       | no    |
+| `$smarty.capture`   | yes       | yes  |
 | `$smarty.foreach`*  | no       | -     |
 | `$smarty.template`* | no       | no    |
 | `$smarty.version`*  | no       | no    |
+| `$smarty.current_dir`  | -       | no    |
+| `$smarty.template_object`  | -       | no    |
+| `$smarty.config`*  | no       | no    |
 
 ## Modifiers
 
