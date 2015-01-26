@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7580cdd2020bc4c6449361e0a71ff3f7",
+    "hash": "f609e82676c3b4c410fde3637623e5e2",
     "packages": [
         {
             "name": "fenom/entity-loader",
@@ -148,6 +148,53 @@
                 "tag"
             ],
             "time": "2015-01-26 12:07:48"
+        },
+        {
+            "name": "fenom/storage",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bzick/fenom-storage.git",
+                "reference": "3e890d595cabc8ec9d57025a8737b185f5cdf9f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bzick/fenom-storage/zipball/3e890d595cabc8ec9d57025a8737b185f5cdf9f5",
+                "reference": "3e890d595cabc8ec9d57025a8737b185f5cdf9f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.8"
+            },
+            "require-dev": {
+                "fenom/fenom": "2.*",
+                "phpunit/phpunit": "*",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Fenom\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Shalganov",
+                    "email": "a.cobest@gmail.com"
+                }
+            ],
+            "description": "Fenom extension: store data in fenom",
+            "keywords": [
+                "assign",
+                "fenom",
+                "storage",
+                "store"
+            ],
+            "time": "2015-01-26 14:25:45"
         }
     ],
     "packages-dev": [
@@ -1055,6 +1102,61 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2014-12-15 14:25:24"
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "e4e3e176c03aaea2294a69c11a8bc165ec758ba9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/e4e3e176c03aaea2294a69c11a8bc165ec758ba9",
+                "reference": "e4e3e176c03aaea2294a69c11a8bc165ec758ba9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "libs/Smarty.class.php",
+                    "libs/SmartyBC.class.php",
+                    "libs/sysplugins/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-01-22 03:07:58"
         },
         {
             "name": "symfony/yaml",

@@ -3,8 +3,8 @@
 namespace Fenom;
 
 class Smarty extends \Fenom {
+    use StorageTrait;
+    use EntityLoaderTrait;
+    use FSEntityLoaderTrait;
     use SmartyFallbackTrait;
-//    use StorageTrait;
-//    use LoaderTrait;
-//    use SimpleLoaderTrait;
-} 
+}

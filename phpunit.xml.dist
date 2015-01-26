@@ -8,11 +8,13 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
+         bootstrap="tests/autoload.php"
          syntaxCheck="false">
     <php>
         <ini name="memory_limit" value="-1"/>
         <ini name="display_errors" value="1"/>
         <ini name="error_reporting" value="-1"/>
+        <const name="FENOM_RESOURCES" value="./tests/resources"/>
     </php>
 
     <testsuites>

@@ -12,10 +12,13 @@
     ],
     "require": {
         "fenom/fenom": "2.*",
-        "fenom/fs-entity-loader": "1.*"
+        "fenom/entity-loader": "1.*",
+        "fenom/fs-entity-loader": "1.*",
+        "fenom/storage": "1.*"
     },
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "smarty/smarty": "3.*"
     },
     "autoload": {
         "psr-0": { "Fenom\\": "src/" }
