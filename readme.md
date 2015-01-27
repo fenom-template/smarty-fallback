@@ -49,7 +49,24 @@ Smarty Fallback for Fenom
 | `literal` | [yes](http://www.smarty.net/docsv2/en/language.function.literal.tpl) | [yes](http://www.smarty.net/docs/en/language.function.literal.tpl)
 | `ldelim`,`rdelim` | [yes](http://www.smarty.net/docsv2/en/language.function.ldelim.tpl) | [yes](http://www.smarty.net/docs/en/language.function.ldelim.tpl)
 | `while` | - | [yes](http://www.smarty.net/docs/en/language.function.while.tpl)
+| `extends`,`block` | - | [yes](http://www.smarty.net/docs/en/language.function.block.tpl)
+| `insert`** | no | [no](http://www.smarty.net/docs/en/language.function.insert.tpl)
+| `html_checkboxes`*| no | no 
+| `html_image`*| no | no 
+| `html_options`*| no | no 
+| `html_radios`*| no | no 
+| `html_select_date`*| no | no 
+| `html_select_time`*| no | no 
+| `html_table`*| no | no 
+| `mailto`*| no | no 
+| `math`*| no | no 
+| `textformat`*| no | no 
+| `eval` | no | no 
+| `fetch`* | no | no 
+| `counter`* | no | no 
+| `cycle`* | [no](http://www.smarty.net/docsv2/en/language.function.cycle.tpl) | [no](http://www.smarty.net/docs/en/language.function.cycle.tpl)
 
-* - todo
 
-** - newer
+`*` - todo
+
+`**` - newer
