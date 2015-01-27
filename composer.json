@@ -3,7 +3,7 @@
     "description": "Smarty fallback for Fenom",
     "minimum-stability": "dev",
     "license": "MIT",
-    "keywords": ["fenom", "smarty", "fallback", "templater", "template"],
+    "keywords": ["fenom", "smarty", "fallback", "templater", "template", "templating"],
     "authors": [
         {
             "name": "Ivan Shalganov",
