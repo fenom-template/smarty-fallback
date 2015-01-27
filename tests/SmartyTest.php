@@ -19,7 +19,7 @@ class SmartyTest extends TestCase {
     /**
      * @group sb
      */
-    public function testSandbox() {
+    public function _testSandbox() {
         try {
 //            var_dump($this->fenom->compileCode('{assign var="var1" value="val1"}')->getBody());
 //            var_dump($this->fenom->compileCode('{assign var="var1" value=$smarty.get.var1|@upper}')->getBody());
@@ -89,6 +89,15 @@ class SmartyTest extends TestCase {
             "one:1(index: 1, iteration: 2, show: 1, last: , last: , total: 4)\n".
             "b:2(index: 2, iteration: 3, show: 1, last: , last: , total: 4)\n".
             "two:2(index: 3, iteration: 4, show: 1, last: , last: , total: 4)\n");
+    }
+
+    /**
+     * @group testForeachS3
+     */
+    public function testForeachS3() {
+        $this->assertRender(
+            '{foreach $list as $k => $e}{$k}:{$e},{foreachelse}none{/foreach}',
+            "a:1,one:1,b:2,two:2,");
     }
 
 //    public function testGlobals() {

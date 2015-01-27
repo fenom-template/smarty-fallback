@@ -59,14 +59,13 @@ class Parser {
                 $tokens->next();
             }
         }
-        $tokens->seek(0);
+        $tokens->seek(1);
         if($new_format) {
             return Compiler::foreachOpen($tokens, $tag);
         } else {
             $after = "";
             $tag["after"] = "";
             $tag["else"]  = false;
-            $tokens->next();
             $params = self::parseParams($tokens, $tag->tpl, [
                 'from' => false,
                 'key' => false,
