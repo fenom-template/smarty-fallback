@@ -11,9 +11,28 @@ trait SmartyFallbackTrait {
         /* @var \Fenom $this */
         $this->addTagFilter([$this, 'filterTag']);
         $this->addAccessor('capture', 'Fenom\Smarty\Accessor::capture');
+        $this->addAccessor('ldelim', 'Fenom\Smarty\Accessor::ldelim');
+        $this->addAccessor('rdelim', 'Fenom\Smarty\Accessor::rdelim');
+        $this->addAccessor('foreach', 'Fenom\Smarty\Accessor::foreachCycle');
+        $this->addBlockCompiler('foreach', 'Fenom\Smarty\Parser::foreachOpen', 'Fenom\Compiler::foreachClose', [
+            'foreachelse' => 'Fenom\Compiler::foreachElse',
+            'break'       => 'Fenom\Compiler::tagBreak',
+            'continue'    => 'Fenom\Compiler::tagContinue',
+        ], ['continue', 'break']);
 //        $this->addBlockCompiler('literal', 'Fenom\Compiler::ignoreOpen', 'Fenom\Compiler::nope');
 //        $this->addFunction('ldelim', function () { return '{';});
 //        $this->addFunction('rdelim', function () { return '}';});
+//        'foreach'    => array( // {foreach ...} {break} {continue} {foreachelse} {/foreach}
+//            'type'       => self::BLOCK_COMPILER,
+//            'open'       => 'Fenom\Compiler::foreachOpen',
+//            'close'      => 'Fenom\Compiler::foreachClose',
+//            'tags'       => array(
+//                'foreachelse' => 'Fenom\Compiler::foreachElse',
+//                'break'       => 'Fenom\Compiler::tagBreak',
+//                'continue'    => 'Fenom\Compiler::tagContinue',
+//            ),
+//            'float_tags' => array('break' => 1, 'continue' => 1)
+//        ),
     }
 
     /**

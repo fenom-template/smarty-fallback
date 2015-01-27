@@ -19,11 +19,13 @@ class SmartyTest extends TestCase {
     /**
      * @group sb
      */
-    public function _testSandbox() {
+    public function testSandbox() {
         try {
 //            var_dump($this->fenom->compileCode('{assign var="var1" value="val1"}')->getBody());
 //            var_dump($this->fenom->compileCode('{assign var="var1" value=$smarty.get.var1|@upper}')->getBody());
-            var_dump($this->fenom->compileCode("{capture name='magic_cap'}captured data{/capture}{\$smarty.capture.magic_cap|upper}")->getBody());
+            var_dump($this->fenom->compileCode('{foreach from=$list key=k item=e name="fc"}{$k}:{$e}'.
+                '(index: {$smarty.foreach.fc.index})'.
+                '\n{foreachelse}none{/foreach}')->getBody());
 //            var_dump($this->fenom->compileCode('{foreach from=$list item="i" key="k" name="lister"} {$smarty.foreach.list.index} {/foreach}')->getBody());
         } catch(\Exception $e) {
             echo $e;
@@ -43,7 +45,7 @@ class SmartyTest extends TestCase {
      * @group testDelims
      */
     public function testDelims() {
-        $this->assertRender("{rdelim}|{ldelim}", '}|{');
+        $this->assertRender("{rdelim}|{ldelim} {\$smarty.ldelim}|{\$smarty.rdelim}", '}|{ {|}');
     }
 
     public static function providerAssign() {
@@ -73,19 +75,35 @@ class SmartyTest extends TestCase {
         $this->assertRender("{capture name='magic_cap'}captured data{/capture}{\$smarty.capture.magic_cap|upper}", 'CAPTURED DATA');
     }
 
-    public function testGlobals() {
-        var_dump($this->fenom->compileCode('{$smarty.get.one}')->getBody());
-        var_dump($this->fenom->compileCode('{$smarty.session.one}')->getBody());
-        var_dump($this->fenom->compileCode('{$smarty.foreach.one.index}')->getBody());
+    /**
+     * @group testForeach
+     */
+    public function testForeachS2() {
+        $this->assertRender(
+            '{foreach from=$list key=k item=e name="fc"}{$k}:{$e}'.
+            '(index: {$smarty.foreach.fc.index}, iteration: {$smarty.foreach.fc.iteration}, '.
+            'show: {$smarty.foreach.fc.show}, last: {$smarty.foreach.fc.first}, '.
+            'last: {$smarty.foreach.fc.last}, total: {$smarty.foreach.fc.total})'.
+            "\n{foreachelse}none{/foreach}",
+            "a:1(index: 0, iteration: 1, show: , last: 1, last: , total: 4)\n".
+            "one:1(index: 1, iteration: 2, show: 1, last: , last: , total: 4)\n".
+            "b:2(index: 2, iteration: 3, show: 1, last: , last: , total: 4)\n".
+            "two:2(index: 3, iteration: 4, show: 1, last: , last: , total: 4)\n");
     }
 
-    public function testAssignTag() {
+//    public function testGlobals() {
+//        var_dump($this->fenom->compileCode('{$smarty.get.one}')->getBody());
+//        var_dump($this->fenom->compileCode('{$smarty.session.one}')->getBody());
+//        var_dump($this->fenom->compileCode('{$smarty.foreach.one.index}')->getBody());
+//    }
+
+//    public function testAssignTag() {
 
 //        var_dump($fenom->compile('smarty/assign.tpl')->fetch([]));
 
 //        var_dump($fenom->compileCode('{assign var="a" value="sdf sf "}')->getBody());
 //        var_dump($fenom->compileCode('{assign var="a" value="sdf sf {$c.d.e} $d "}')->getBody());
 //        var_dump($fenom->compileCode('{assign var="a" value=$a+1}')->getBody());
-    }
+//    }
 
 }
