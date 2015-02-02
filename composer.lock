@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f609e82676c3b4c410fde3637623e5e2",
+    "hash": "62f96005bac700a3957a0e5d9de43e63",
     "packages": [
         {
             "name": "fenom/entity-loader",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bzick/fenom-entity-loader.git",
-                "reference": "c8b066dfdc080cdd0c5727404894ff90e680ef40"
+                "url": "https://github.com/fenom-template/entity-loader.git",
+                "reference": "c6d20b7911c7c01527bdbba55ecf232e7bb00a66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bzick/fenom-entity-loader/zipball/c8b066dfdc080cdd0c5727404894ff90e680ef40",
-                "reference": "c8b066dfdc080cdd0c5727404894ff90e680ef40",
+                "url": "https://api.github.com/repos/fenom-template/entity-loader/zipball/c6d20b7911c7c01527bdbba55ecf232e7bb00a66",
+                "reference": "c6d20b7911c7c01527bdbba55ecf232e7bb00a66",
                 "shasum": ""
             },
             "require": {
@@ -50,20 +50,20 @@
                 "loader",
                 "tag"
             ],
-            "time": "2015-01-26 11:07:16"
+            "time": "2015-01-29 19:57:54"
         },
         {
             "name": "fenom/fenom",
-            "version": "2.4.4",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bzick/fenom.git",
-                "reference": "01ae6081c6157731f3ffba6b2ede5bd0887d770b"
+                "url": "https://github.com/fenom-template/fenom.git",
+                "reference": "feb3a5188418c28c93ccc6eae2c93d743ba67b46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bzick/fenom/zipball/01ae6081c6157731f3ffba6b2ede5bd0887d770b",
-                "reference": "01ae6081c6157731f3ffba6b2ede5bd0887d770b",
+                "url": "https://api.github.com/repos/fenom-template/fenom/zipball/feb3a5188418c28c93ccc6eae2c93d743ba67b46",
+                "reference": "feb3a5188418c28c93ccc6eae2c93d743ba67b46",
                 "shasum": ""
             },
             "require": {
@@ -100,20 +100,20 @@
                 "templater",
                 "templating"
             ],
-            "time": "2015-01-22 11:54:34"
+            "time": "2015-01-31 22:16:58"
         },
         {
             "name": "fenom/fs-entity-loader",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bzick/fenom-fs-entity-loader.git",
-                "reference": "ce39f8334c180d7b22e8305c4dc4eaab607f385b"
+                "url": "https://github.com/fenom-template/fs-entity-loader.git",
+                "reference": "3784fba1004cae8ecb8a30b58f8229a6457427fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bzick/fenom-fs-entity-loader/zipball/ce39f8334c180d7b22e8305c4dc4eaab607f385b",
-                "reference": "ce39f8334c180d7b22e8305c4dc4eaab607f385b",
+                "url": "https://api.github.com/repos/fenom-template/fs-entity-loader/zipball/3784fba1004cae8ecb8a30b58f8229a6457427fc",
+                "reference": "3784fba1004cae8ecb8a30b58f8229a6457427fc",
                 "shasum": ""
             },
             "require": {
@@ -147,20 +147,20 @@
                 "loader",
                 "tag"
             ],
-            "time": "2015-01-26 12:07:48"
+            "time": "2015-01-29 19:47:42"
         },
         {
             "name": "fenom/storage",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bzick/fenom-storage.git",
-                "reference": "3e890d595cabc8ec9d57025a8737b185f5cdf9f5"
+                "url": "https://github.com/fenom-template/storage.git",
+                "reference": "f978d32ae5bcc94fc5e3c3cf48e545660e064991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bzick/fenom-storage/zipball/3e890d595cabc8ec9d57025a8737b185f5cdf9f5",
-                "reference": "3e890d595cabc8ec9d57025a8737b185f5cdf9f5",
+                "url": "https://api.github.com/repos/fenom-template/storage/zipball/f978d32ae5bcc94fc5e3c3cf48e545660e064991",
+                "reference": "f978d32ae5bcc94fc5e3c3cf48e545660e064991",
                 "shasum": ""
             },
             "require": {
@@ -194,7 +194,7 @@
                 "storage",
                 "store"
             ],
-            "time": "2015-01-26 14:25:45"
+            "time": "2015-01-29 20:06:42"
         }
     ],
     "packages-dev": [
@@ -611,12 +611,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3d6600da7eb6cb37d25143eea3fd09875c3ede49"
+                "reference": "e85198bbce24ea11075ce8bdfc2cfffb818aae8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3d6600da7eb6cb37d25143eea3fd09875c3ede49",
-                "reference": "3d6600da7eb6cb37d25143eea3fd09875c3ede49",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e85198bbce24ea11075ce8bdfc2cfffb818aae8c",
+                "reference": "e85198bbce24ea11075ce8bdfc2cfffb818aae8c",
                 "shasum": ""
             },
             "require": {
@@ -635,7 +635,7 @@
                 "sebastian/comparator": "~1.1",
                 "sebastian/diff": "~1.2",
                 "sebastian/environment": "~1.2",
-                "sebastian/exporter": "~1.0",
+                "sebastian/exporter": "~1.2",
                 "sebastian/global-state": "~1.0",
                 "sebastian/version": "~1.0",
                 "symfony/yaml": "~2.1|~3.0"
@@ -675,7 +675,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-01-24 14:25:39"
+            "time": "2015-01-27 07:32:25"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -904,12 +904,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "35ab8d385eef068186c83e23ae83c96b0288b3ee"
+                "reference": "84839970d05254c73cde183a721c7af13aede943"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/35ab8d385eef068186c83e23ae83c96b0288b3ee",
-                "reference": "35ab8d385eef068186c83e23ae83c96b0288b3ee",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/84839970d05254c73cde183a721c7af13aede943",
+                "reference": "84839970d05254c73cde183a721c7af13aede943",
                 "shasum": ""
             },
             "require": {
@@ -922,7 +922,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -962,7 +962,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2015-01-24 09:57:24"
+            "time": "2015-01-27 07:23:06"
         },
         {
             "name": "sebastian/global-state",

@@ -51,19 +51,19 @@ Smarty Fallback for Fenom
 | `while` | - | [yes](http://www.smarty.net/docs/en/language.function.while.tpl)
 | `extends`,`block` | - | [yes](http://www.smarty.net/docs/en/language.function.block.tpl)
 | `insert`** | no | [no](http://www.smarty.net/docs/en/language.function.insert.tpl)
-| `html_checkboxes`*| no | no 
-| `html_image`*| no | no 
-| `html_options`*| no | no 
-| `html_radios`*| no | no 
-| `html_select_date`*| no | no 
-| `html_select_time`*| no | no 
-| `html_table`*| no | no 
-| `mailto`*| no | no 
-| `math`*| no | no 
-| `textformat`*| no | no 
+| `html_checkboxes`*| yes | yes 
+| `html_image`*| yes | yes 
+| `html_options`*| yes | yes 
+| `html_radios`*| yes | yes 
+| `html_select_date`*| yes | yes 
+| `html_select_time`*| yes | yes 
+| `html_table`*| yes | yes 
+| `mailto`*| yes | yes 
+| `math`*| yes | - 
+| `textformat`*| yes | yes 
 | `eval` | no | no 
-| `fetch`* | no | no 
-| `counter`* | no | no 
+| `fetch`* | yes | yes 
+| `counter`* | yes | yes 
 | `cycle`* | [no](http://www.smarty.net/docsv2/en/language.function.cycle.tpl) | [no](http://www.smarty.net/docs/en/language.function.cycle.tpl)
 
 
